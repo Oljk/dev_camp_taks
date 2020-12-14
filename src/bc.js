@@ -13,8 +13,13 @@ function div(a, b) {
 function mult(a, b) {
     return a * b;
 }
-function mod(a, b) {
-    return a % b;
+
+function pow(a, b) {
+    return a ** b;
+}
+
+function max(a, b) {
+    return a > b ? a : b;
 }
 
 
@@ -23,5 +28,6 @@ module.exports = {
     sub,
     div,
     mult,
-    mod,
+    pow,
+    max,
 };
