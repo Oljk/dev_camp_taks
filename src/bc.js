@@ -22,6 +22,9 @@ function max(a, b) {
     return a > b ? a : b;
 }
 
+function mod(a, b) {
+    return a % b;
+}
 
 module.exports = {
     add,
@@ -30,4 +33,5 @@ module.exports = {
     mult,
     pow,
     max,
+    mod
 };
