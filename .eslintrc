@@ -1,15 +1,12 @@
 {
-    "extends": [
-    "react-app",
-    "prettier"
-],
     "rules": {
-    "jsx-quotes": [
-        1,
-        "prefer-double"
-    ]
+        "quotes": ["error", "single"]/*,
+        "prettier/prettier": "error"*/
 },
-    "plugins": [
+   /* "plugins": [
     "prettier"
-]
+],*/
+    "parserOptions": {
+        "ecmaVersion": 2017
+    }
 }
