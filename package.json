@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" "
+    "test": "echo \"Error: no test specified\" ",
+    "mylint" : "eslint src"
   },
   "repository": {
     "type": "git",
@@ -17,17 +18,15 @@
     "url": "https://github.com/Oljk/dev_camp_taks/issues"
   },
   "homepage": "https://github.com/mksoroka/dev_camp_taks#readme",
-  "dependencies": {
-    "husky": "^4.3.6"
-  },
   "husky": {
     "hooks": {
-      "pre-commit": "eslint src",
-      "pre-push": "eslint src"
+      "pre-commit": "npm run mylint",
+      "pre-push": "npm run mylint"
     }
   },
   "devDependencies": {
     "eslint": "^7.15.0",
-    "eslint-plugin-prettier": "^3.3.0"
+    "eslint-plugin-prettier": "^3.3.0",
+    "husky": "^4.3.6"
   }
 }
